@@ -6,10 +6,10 @@ A command line tool for quickly scaffolding new MCP (Model Context Protocol) ser
 
 ```bash
 # Create a new server in the directory `my-server`
-npx @modelcontextprotocol/create-server my-server
+npm create mcp-tools my-server
 
 # With options
-npx @modelcontextprotocol/create-server my-server --name "My MCP Server" --description "A custom MCP server"
+npm create mcp-tools my-server --name "My MCP Server" --description "A custom MCP server"
 ```
 
 After creating your server:
@@ -24,6 +24,26 @@ npm run watch    # Start TypeScript compiler in watch mode
 
 # optional
 npm link         # Make your server binary globally available
+```
+
+```bash
+% npm create mcp-tools --help
+Create a package.json file
+
+Usage:
+npm init <package-spec> (same as `npx <package-spec>`)
+npm init <@scope> (same as `npx <@scope>/create`)
+
+Options:
+[--init-author-name <name>] [--init-author-url <url>] [--init-license <license>]
+[--init-module <module>] [--init-version <version>] [-y|--yes] [-f|--force]
+[--scope <@scope>]
+[-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]
+[-ws|--workspaces] [--no-workspaces-update] [--include-workspace-root]
+
+aliases: create, innit
+
+Run "npm help init" for more info
 ```
 
 ## Differences from the original
